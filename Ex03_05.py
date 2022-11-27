@@ -32,7 +32,12 @@ def nega_fib(n):
     return (-1)**(1-n)*fib(-n)
 
 
-n = 8
+while True:
+    try:
+        n = int(input('Введите длину списка: '))
+        break
+    except ValueError:
+        print("Видимо вы ошиблись. Нужно ввести число. Попробуйте снова...")
 
 my_list = []
 for i in range(-n, n+1):
